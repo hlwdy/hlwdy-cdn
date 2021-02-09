@@ -53,7 +53,7 @@
   display: inline-block; }
 
 @media (prefers-color-scheme: dark){
-	.contextmenu{background-color:#404040;box-shadow:1px 2px 30px #606060}
+	.contextmenu{background-color:#404040;box-shadow:1px 2px 30px #1b1b1b}
 	.contextmenu > ul .menu-item{color:white}
 	.contextmenu > ul .menu-line{background-color:#565656}
 	.contextmenu > ul .menu-item:hover{background-color:#07468a}
