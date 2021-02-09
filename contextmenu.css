@@ -1,0 +1,60 @@
+.contextmenu {
+  margin: 0;
+  position: absolute;
+  display: none;
+  *display: inline;
+  *zoom: 1;
+  min-width: 100px;
+  background-color: #fff;
+  padding: 2px 0;
+  border-radius: 4px;
+  box-shadow: 1px 2px 30px #b3b3b3;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -khtml-user-select: none;
+  user-select: none; }
+  .contextmenu > ul {
+    margin: 0;
+    padding: 0; }
+    .contextmenu > ul > li {
+      list-style: none; }
+    .contextmenu > ul .menu-item {
+      margin: 0;
+      height: 28px;
+      line-height: 28px;
+      padding: 0 20px;
+      font-size: 14px;
+      color: #666;
+      white-space: nowrap; }
+      .contextmenu > ul .menu-item:hover {
+        background-color: #1961af;
+        cursor: default;
+        color: #fff; }
+      .contextmenu > ul .menu-item .menu-link {
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+        color: inherit;
+        cursor: default; }
+    .contextmenu > ul .menu-line {
+      padding: 0;
+      width: 100%;
+      height: 1px;
+      background-color: #ddd;
+      margin: 3px 0; }
+    .contextmenu > ul .menu-disable {
+      pointer-events: none;
+      cursor: default;
+      color: #ccc; }
+
+.contextmenu-visible {
+  display: inline-block; }
+
+@media (prefers-color-scheme: dark){
+	.contextmenu{background-color:#404040;box-shadow:1px 2px 30px #606060}
+	.contextmenu > ul .menu-item{color:white}
+	.contextmenu > ul .menu-line{background-color:#565656}
+	.contextmenu > ul .menu-item:hover{background-color:#07468a}
+}
