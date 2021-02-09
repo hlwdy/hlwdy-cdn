@@ -6,11 +6,9 @@
  * @func  update    更新菜单项
  * @func  destroy   销毁菜单
  *
- *
  * author:  Shulk
  * source:  https://github.com/shulkme/Contextmenu
- * build:   2018/5/31
- * version: 1.0.0
+ * 修改优化: hlwdy
  */
 ;(function($, window, document,undefined) {
     "use strict"
@@ -85,7 +83,7 @@
         },
         //绑定菜单点击事件
         bindHead: function (_this,ele,wrapper,menu) {
-            $(ele).mousedown(function(e) {
+            $(ele).on("mousedown",function(e) {
                 //绑定鼠标右击事件
                 if (3 == e.which) {
                     (_this.options.beforeFunc)(this);//菜单调用前函数
