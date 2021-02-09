@@ -83,7 +83,7 @@
         },
         //绑定菜单点击事件
         bindHead: function (_this,ele,wrapper,menu) {
-            $(ele).on("mousedown",function(e) {
+            $(document).on('mousedown',ele,function(e) {
                 //绑定鼠标右击事件
                 if (3 == e.which) {
                     (_this.options.beforeFunc)(this);//菜单调用前函数
